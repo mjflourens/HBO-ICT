@@ -6,7 +6,7 @@ Date and time: 2020-09-13 18:13:25 CEST
 '''
 
 import math
-
+#this is a comment
 currency = input("Which currency would you like to exchange, USD, GBP, or YEN?") #asks for the currency to be converted.
 
 if currency == "USD":
