@@ -5,15 +5,17 @@ def generate_key():
     Generates a key and saves it.
     '''
     key = Fernet.generate_key()
-    with open("secret.key", "wb") as key:
-        key.write(key)
+    with open("secret.key", "wb") as key_doc:
+        key_doc.write(key)
+
+generate_key()
 
 def load_key():
     '''
     Loads secret.key
     '''
-    return open("secret.key", "rb").read
-
+    return open("secret.key", "rb").read()
+    
 def encrypt_message(message):
     '''
     Encrypts the message
@@ -27,7 +29,7 @@ def encrypt_message(message):
 
 plaintext = input("Enter message to encrypt: ")
 
-if __name__ == "__main__"
+if __name__ == "__main__":
     encrypt_message(plaintext)
 
 def decrypt_message(encrypted_message):
@@ -39,7 +41,6 @@ def decrypt_message(encrypted_message):
     decrypted_message = f.decrypt(encrypted_message)
 
     print(decrypted_message.decode())
-
 
 ciphertext = input("Enter message to decrypt: ")
 if __name__ == "__main__":
