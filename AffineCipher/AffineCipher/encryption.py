@@ -13,7 +13,7 @@ from cryptography.fernet import Fernet
 
 __author__ = "Marnix J.F. Lourens"
 __copyright__ = "Copyright 2020, Marnix J.F. Lourens"
-__credits__ = "Marnix J.F. Lourens, Rafáel Alio"
+__credits__ = "Marnix J.F. Lourens, Ráfael Alio"
 __license__ = "GNU General Public License v3.0"
 __version__ = "Final"
 __maintainer__ = "Marnix J.F. Lourens"
